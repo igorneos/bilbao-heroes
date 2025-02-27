@@ -22,7 +22,7 @@ resource "azurerm_service_plan" "plan" {
 
 resource "azurerm_linux_web_app" "web" {
 
-  name                = "hero-ghc-extension"
+  name                = "bilbao-heroes"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.plan.id
